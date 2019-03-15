@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}" dir="ltr">
+  {{ partial "head.html" . }}
+  <body>
+    {{ partial "nav-bar.html" . }}
+    <div class="container mt-4">
+            <h1 class="text-center heading">{{ .Title }}</h1>
+            <small class="text-center d-block text-muted"><time datetime="{{ .Date.Format "2006-01-02" }}">Erstellt am: {{ .Date.Format "02.01.2006" }}</time></small>
+        </div>
+        {{ if isset .Params "featuredimage" -}}
+          <img class="cld-responsive single-img mx-auto d-block my-4" data-src="https://res.cloudinary.com/witzlsperger/image/upload/w_auto,dpr_auto,c_fill,f_auto/{{.Params.featuredimage}}" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" {{ if isset .Params "featuredimagedescription" }}alt="{{.Params.featuredimagedescription}}"{{end}}/>
+        {{- end }}
+          <article style="max-width:890px" class="container w-100 my-5">
+            {{ .Content }}
+        </article>
+
+        {{ partial "share.html" }}
+
+    <div class="text-center my-5">
+      <a class="text-dark" href="{{.Site.BaseURL}}">↽ Back</a>
+    </div>
+    {{ partial "footer.html" . }}
+    {{ partial "scripts.html" . }}
+  </body>
+</html>

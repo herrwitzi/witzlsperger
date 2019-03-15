@@ -1,0 +1,18 @@
+<div class="col-lg-5 col-md-5 col-12 mb-3">
+    <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" class="card p-4" href="{{ .Permalink }}">
+        {{ if isset .Params "featuredimage" -}}
+        <div class="featuredImage mb-3">
+            <img class="cld-responsive blog-img featuredImage rounded card-img" data-src="https://res.cloudinary.com/witzlsperger/image/upload/w_auto,dpr_auto,c_fill,f_auto/{{.Params.featuredimage}}" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" {{ if isset .Params "featuredimagedescription" }}alt="{{.Params.featuredimagedescription}}"{{end}}/>
+        </div>
+        {{- end }}  
+        
+        <small class="text-muted"><time datetime="{{ .Date.Format "2006-01-02" }}">Erstellt am: {{ .Date.Format "02.01.2006" }}</time></small>
+        <h3 class="h4 font-weight-bold text-dark">{{ .Title }}</h3>
+        <div>
+            {{ if (isset .Params "tags") }}<span class="badge badge-light bs">{{ range .Params.tags }}{{ . }} {{ end }}</span>{{ end }}
+            <div class="float-right">
+                
+            </div>
+        </div>
+    </a>
+</div>

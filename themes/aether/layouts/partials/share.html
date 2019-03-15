@@ -1,0 +1,13 @@
+<div id="share" class="text-center my-5">
+    
+</div>
+<script>
+    var url = encodeURIComponent(window.location.href);
+    document.getElementById("share").innerHTML = 
+    '<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=' + url + '" class="h5 mr-4">' +
+        '<i class="fab fa-facebook"></i> Share' + 
+    '</a>' + 
+    '<a target="_blank" href="https://twitter.com/home?status=' + url + '" class="h5">' + 
+        '<i class="fab fa-twitter"></i> Tweet' + 
+    '</a>';
+ </script>

@@ -1,0 +1,60 @@
+{{ $config := .Site.Data.config }}
+<head>
+  <script>
+    var gaProperty='UA-136092283-1';var disableStr='ga-disable-'+gaProperty;if(document.cookie.indexOf(disableStr+'=true')>-1){window[disableStr]=true;}function gaOptout(){document.cookie=disableStr+'=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';window[disableStr]=true;}
+  </script>
+  {{ template "_internal/google_analytics_async.html" . }}
+  <title>
+      {{- $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" -}}
+      {{- if .IsHome -}}
+          {{ .Site.Title }}
+      {{- else if .Params.heading -}}
+          {{ .Params.heading }}
+      {{- else -}}
+          {{ .Title }} | {{ .Site.Title }}
+      {{- end -}}
+  </title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="content-language" content="de">
+  
+  <link rel="preconnect" href="https://res.cloudinary.com">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.BaseURL }}/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ .Site.BaseURL }}/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ .Site.BaseURL }}/img/favicon-16x16.png">
+  <link rel="manifest" href="{{ .Site.BaseURL }}/img/site.webmanifest">
+  <link rel="mask-icon" href="{{ .Site.BaseURL }}/img/safari-pinned-tab.svg" color="#00fefe">
+  <meta name="msapplication-TileColor" content="#aaffa7">
+  <meta name="theme-color" content="#ffffff">
+  
+  <meta name="author" content="{{ $config.author }}">
+  <meta name="publisher" content="{{ $config.author }}">
+  <meta name="copyright" content="{{ $config.author }}">
+  <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}">
+  <meta name="keywords" content="{{ $config.keywords }}">
+  <meta name="robots" content="index, follow">
+  <meta name="DC.Creator" content="{{ $config.author }}">
+  <meta name="DC.Publisher" content="{{ $config.author }}">
+  <meta name="DC.Rights" content="{{ $config.author }}">
+  <meta name="DC.Description" content="{{ $config.description }}">
+  <meta name="DC.Language" content="de">
+
+  <!-- Including the bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!--{{ $styles := resources.Get "css/styles.css" | minify}}
+  <link rel="stylesheet" type="text/css" href="{{ $styles.Permalink }}">-->
+  <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/styles.css">
+  <!-- Including google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:800" rel="stylesheet">
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+
+
+{{ if .RSSLink }}
+  <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+  <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
+{{ end }}
+
+{{ partial "seo_schema.html" . }}
+</head>

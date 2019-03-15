@@ -1,0 +1,6 @@
+{{ $footer := .Site.Data.footer }}
+
+<footer class="text-center text-muted py-4">
+  {{ $footer.text }}
+  <a href="{{ .Site.BaseURL }}/datenschutz/"><h4 class="text-dark">Datenschutz</h4></a>
+</footer>

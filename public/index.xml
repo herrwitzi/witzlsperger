@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Markus Witzlsperger</title>
+    <link>http://www.witzlsperger.de/</link>
+    <description>Recent content on Markus Witzlsperger</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Wed, 06 Mar 2019 10:34:32 +0100</lastBuildDate>
+    
+        <atom:link href="http://www.witzlsperger.de/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hello</title>
+      <link>http://www.witzlsperger.de/blog/hello/</link>
+      <pubDate>Wed, 06 Mar 2019 10:34:32 +0100</pubDate>
+      
+      <guid>http://www.witzlsperger.de/blog/hello/</guid>
+      <description>Dies ist ein kleines Turtorial für HTML</description>
+    </item><item>
+      <title>Hello World</title>
+      <link>http://www.witzlsperger.de/blog/hello-world/</link>
+      <pubDate>Wed, 06 Mar 2019 10:34:32 +0100</pubDate>
+      
+      <guid>http://www.witzlsperger.de/blog/hello-world/</guid>
+      <description>Dies ist ein kleines Turtorial für JS und CSS</description>
+    </item><item>
+      <title>FFW Webseite</title>
+      <link>http://www.witzlsperger.de/arbeitsproben/ffw-webseite/</link>
+      <pubDate>Tue, 05 Mar 2019 11:27:08 +0100</pubDate>
+      
+      <guid>http://www.witzlsperger.de/arbeitsproben/ffw-webseite/</guid>
+      <description></description>
+    </item><item>
+      <title>Moreposts</title>
+      <link>http://www.witzlsperger.de/arbeitsproben/moreposts/</link>
+      <pubDate>Fri, 01 Mar 2019 13:39:07 +0100</pubDate>
+      
+      <guid>http://www.witzlsperger.de/arbeitsproben/moreposts/</guid>
+      <description>dies ist eine beschreibung hahahah</description>
+    </item><item>
+      <title>Morepost</title>
+      <link>http://www.witzlsperger.de/arbeitsproben/morepost/</link>
+      <pubDate>Fri, 01 Mar 2019 13:39:01 +0100</pubDate>
+      
+      <guid>http://www.witzlsperger.de/arbeitsproben/morepost/</guid>
+      <description></description>
+    </item><item>
+      <title>Firstpost</title>
+      <link>http://www.witzlsperger.de/arbeitsproben/firstpost/</link>
+      <pubDate>Fri, 01 Mar 2019 10:27:29 +0100</pubDate>
+      
+      <guid>http://www.witzlsperger.de/arbeitsproben/firstpost/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

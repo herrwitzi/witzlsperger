@@ -1,0 +1,41 @@
+title = "lebenslauf"
+
+[[experience]]
+timeperiod = "Januar 2019 - März 2019"
+company = "sky Deutschland"
+description = "Bachelorand"
+
+[[experience]]
+timeperiod = "April 2018 - August 2018"
+company = "sky Deutschland"
+description = "Praktikant"
+
+[[experience]]
+timeperiod = "April 2017"
+company = "TH Deggendorf"
+description = "Deutschland Stipendium"
+
+[[experience]]
+timeperiod = "Dezember 2016 - November 2017"
+company = "e.kundenservice Netz GmbH"
+description = "Werkstudent"
+
+[[experience]]
+timeperiod = "Oktober 2015 - März 2019"
+company = "TH Deggendorf"
+description = "Medientechnik (BA)"
+
+[[experience]]
+timeperiod = "Oktober 2014 - September 2015"
+company = "HAW Landshut"
+description = "Informatik (BA)"
+
+[[experience]]
+timeperiod = "2014"
+company = "FOS Landshut"
+description = "Fachhochschulreife"
+
+[[experience]]
+timeperiod = "Juli 2012"
+company = "Realschule Ergolding"
+description = "Mittlere Reife"

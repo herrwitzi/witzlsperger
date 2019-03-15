@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}" dir="ltr">
+  {{ partial "head.html" . }}
+  <body>
+    <main>
+      {{ partial "sidebar.html" . }}
+      <div class="main-content">
+        {{ if .Site.Data.skills }}{{ partial "skills.html" . }}{{ end }}
+        {{ if .Site.Data.experience }}{{ partial "experience.html" . }}{{ end }}
+        {{ if .Site.Data.services }}{{ partial "services.html" . }}{{ end }}
+      </div>
+      {{ partial "arbeitsproben.html" . }}
+      {{ partial "blog.html" . }}
+    </main>
+    {{ partial "footer.html" . }}
+    {{ partial "scripts.html" . }}
+  </body>
+</html>

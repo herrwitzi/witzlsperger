@@ -1,0 +1,16 @@
+<div style="z-index: 4; position: relative;">
+    <section class="blue">
+        <h2 class="heading">Blog</h2>
+        <div class="row">
+        {{ $paginator := .Paginate (where .Pages "Params.displayinlist" "!=" false) -}}
+        {{- range  first 2 (where .Pages "Section" "blog") -}}
+            {{ .Render "li" }}
+        {{- end }}
+        <div class="col-lg-2 col-12 align-items-end d-flex align-items-center">
+            <a href="{{ .Site.BaseURL }}/blog" class="btn btn-dark-faded rounded-circle p-4 text-center card">
+                <img width="40px" src="{{ .Site.BaseURL }}/img/next.svg" alt="">
+            </a>
+        </div>
+        </div>
+    </section>
+</div>

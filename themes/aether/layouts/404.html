@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}" dir="ltr">
+  {{ partial "head.html" . }}
+  <body>
+    {{ partial "nav-bar.html" . }}
+    <div class="container mt-4">
+            <h1 class="text-center heading">OOPS...</h1>
+        </div>
+        {{ if isset .Params "featuredimage" -}}
+          <img class="cld-responsive single-img mx-auto d-block my-4" data-src="https://res.cloudinary.com/witzlsperger/image/upload/w_auto,dpr_auto,c_fill,f_auto/{{.Params.featuredimage}}" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" {{ if isset .Params "featuredimagedescription" }}alt="{{.Params.featuredimagedescription}}"{{end}}/>
+        {{- end }}
+          <article style="max-width:890px" class="container w-100 my-5">
+            <h2>404</h2>
+            <p>Diese Seite scheint es nicht zu geben :(</p>
+            <p>Du kannst aber auf die Startseite zurückkehren.</p>
+        </article>
+    <div class="text-center my-5">
+      <a class="text-dark" href="{{.Site.BaseURL}}">↽ Back</a>
+    </div>
+    {{ partial "footer.html" . }}
+    {{ partial "scripts.html" . }}
+  </body>
+</html>

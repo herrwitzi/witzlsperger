@@ -1,0 +1,21 @@
+{{ $sidebar := .Site.Data.sidebar }}
+{{ $social := .Site.Data.social }}
+<section id="sidebar" class="sidebar d-flex align-items-center p-5">
+  <div class="main-info">
+    <img class="cld-responsive rounded-circle sidebar-img mb-3" data-src="https://res.cloudinary.com/witzlsperger/image/upload/w_auto,dpr_auto,c_fill,ar_1:1,f_auto,g_auto:subject/{{ $sidebar.displayPicture }}" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"/>
+    <h1 class="heading">{{ $sidebar.title }} <span class="highlight">{{ $sidebar.highlightedText }}</span></h1>
+    <h5>{{ $sidebar.description }}</h5>
+    <p class="text-muted"> {{ $sidebar.about }}</p>
+    <div class="social my-4">
+      {{ range $key, $value := $social.social }}
+        <a target="_blank" href="{{ $value }}">
+          <i class="fab fa-{{ $key }}"></i>
+        </a>
+      {{ end }}
+    </div>
+    <!--<a href="#contact" class="btn btn-dark btn-lg">Kontakt</a>
+    <a target="_blank" href="https://uicard.io/products/hugo-uilite-pro" class="btn btn-warning btn-lg ml-2">Buy Now</a>-->
+
+    
+  </div>
+</section>

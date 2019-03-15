@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}" dir="ltr">
+  {{ partial "head.html" . }}
+  <body>
+    {{ partial "nav-bar.html" . }}
+    <main>
+      <div style="z-index: 4; position: relative;">
+        <section class="pt-5 pb-0">
+            <div class="container">
+            {{ $paginator := .Paginate (where .Pages "Params.displayinlist" "!=" false) -}}
+            {{- range $paginator.Pages -}}
+                <article class="mb-5">
+                    <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" class="card p-4" href="{{ .Permalink }}">
+                        <div class="row">
+                            {{ if isset .Params "featuredimage" -}}
+                                <div class="col-12 col-lg-4 col-sm-12 col-md-5">
+                                    <img class="cld-responsive blog-img featuredImage rounded card-img" data-src="https://res.cloudinary.com/witzlsperger/image/upload/w_auto,dpr_auto,c_fill,f_auto/{{.Params.featuredimage}}" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" {{ if isset .Params "featuredimagedescription" }}alt="{{.Params.featuredimagedescription}}"{{end}}/>
+                                </div>
+                            {{- end }}
+                            <div class="col-12 col-lg-8 col-sm-12 col-md-7">
+                                <small class="text-muted"><time datetime="{{ .Date.Format "2006-01-02" }}">Erstellt am: {{ .Date.Format "02.01.2006" }}</time></small>
+                                <h2 class="heading mb-0"><span class="text-dark">{{ .Title }}</span></h2>
+                                <small class="text-muted" style="text-transform:uppercase">
+                                    <span>
+                                        {{ if (isset .Params "tags") }}<span class="badge badge-light">{{ range .Params.tags }}#{{ . }} {{ end }}</span>{{ end }}        
+                                    </span>
+                                </small>
+                                <p>{{ if (isset .Params "description") }}{{ index .Params "description" }}{{ else }}{{ .Summary }}{{ end }} <span class="text-muted d-inline">Mehr...</span></p>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            {{- end }}
+            </div>
+        </section>
+      </div>
+    </main>
+    {{ partial "footer.html" . }}
+    {{ partial "scripts.html" . }}
+  </body>
+</html>
+
+

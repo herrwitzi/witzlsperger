@@ -1,0 +1,11 @@
+title = "Aktivitäten"
+
+[[services]]
+title = "KLJB Wattenbach"
+description = "Schriftführer"
+icon = "pen-nib"
+
+[[services]]
+title = "FFW Unterwattenbach"
+description = "aktives Mitglied"
+icon = "fire"

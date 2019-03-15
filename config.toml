@@ -1,0 +1,30 @@
+baseURL = "http://www.witzlsperger.de"
+languageCode = "de-de"
+title = "Markus Witzlsperger"
+theme = "aether"
+pluralizelisttitles = "false"
+googleAnalytics = "UA-136092283-1"
+sectionPagesMenu = "menu"
+
+[menu]
+
+  [[menu.menu]]
+    identifier = "blog"
+    name = "blog"
+    url = "/blog/"
+    weight = -110
+
+  [[menu.menu]]
+    identifier = "arbeitsproben"
+    name = "arbeitsproben"
+    url = "/arbeitsproben/"
+    weight = -100
+
+  [[menu.menu]]
+    identifier = "datenschutz"
+    name = ""
+    url = ""  
+
+[taxonomies]
+  category = "categories"
+  tags = "tags"

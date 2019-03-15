@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}" dir="ltr">
+  {{ partial "head.html" . }}
+  <body>
+    {{ partial "nav-bar.html" . }}
+    <div class="container mt-4">
+        <h1 class="text-center heading">{{ .Title }}</h1>
+    </div>
+    <article style="max-width:890px" class="container w-100 my-5">
+        {{ .Content }}
+    </article>
+    {{ partial "footer.html" . }}
+    {{ partial "scripts.html" . }}
+  </body>
+</html>

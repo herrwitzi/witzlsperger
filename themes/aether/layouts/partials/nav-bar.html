@@ -1,0 +1,48 @@
+{{ $sidebar := .Site.Data.sidebar }}
+{{ $social := .Site.Data.social }}
+<nav class="navbar navbar-expand-lg navbar-light bg-white mt-lg-0 mt-3" style="position:relative">
+    <a id="menuBar" href="#0" class="bg-white" style="cursor: pointer; position: absolute; height: 22px; width: 30px;">
+      <div class="hamburger-menu"></div>
+    </a>
+    <div class="secondaryMenu p-3 bg-white">
+      <div>
+        <a href="{{ .Site.BaseURL }}"><h4 class="d-inline-block mr-3 text-dark mb-0">Home</h4></a>
+        {{ range where .Site.Pages "Params.displayinmenu" true -}}
+          <a href="{{ .Permalink }}"><h4 class="d-inline-block mr-3 text-dark mb-0">{{ .Title }}</h4></a>
+        {{ end -}}
+        <!--
+        {{ range $key, $value := .Site.Taxonomies.categories -}}
+          <a href="{{ (printf "%s%s" "categories/" ($key | urlize)) | absURL }}"><h4 class="d-inline-block mr-3 text-dark mb-0">{{ $key | humanize }}</h4></a>
+        {{- end }}
+        -->
+        {{ range .Site.Menus.menu }}
+          <a href="{{ .URL }}" title="{{ .Title }}"><h4 class="d-inline-block mr-3 text-dark mb-0">{{ .Name }}</h4></a>
+        {{ end }}
+
+
+      </div>
+    </div>
+    <span class="mr-auto primaryMenu active">
+      <a class="navbar-brand ml-auto" href="{{.Site.BaseURL}}">
+          <img class="cld-responsive mr-2 navbar-img" data-src="https://res.cloudinary.com/witzlsperger/image/upload/w_auto,dpr_auto,c_pad,ar_1:1,f_auto/{{ $sidebar.navPicture }}" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"/>
+
+          <span style="font-size: 20px" class="heading">
+              {{- if isset $.Site.Params "brand"}}
+                {{- $.Site.Params.brand -}}
+              {{ else }}
+                {{- $.Site.Title -}}
+              {{ end -}}
+          </span>
+        </a>
+    </span>
+    <div class="collapse navbar-collapse float-right" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+        
+        </ul>          
+        {{ range $key, $value := $social.social }}
+          <a target="_blank" class="nav-link text-dark" href="{{ $value }}">
+            <i class="fab fa-{{ $key }}"></i>
+          </a>
+        {{ end }}
+      </div>
+  </nav>

@@ -1,0 +1,16 @@
+{{ $skills := .Site.Data.skills }}
+
+<section id="skills" class="aqua text-light">
+  <h2 class="heading">{{ $skills.title }}</h2>
+
+  {{ range $index, $element := $skills.skills }}
+
+  <div class="skill">
+    <span class="h6">{{ $element.subject }}</span>
+    <div class="progress prog-ani">
+      <div class="progress-bar bg-blue" role="progressbar" style="width: {{ $element.value }}%"></div>
+    </div>
+    <div class="progress prog-line"></div>
+  </div>
+  {{ end }}
+</section>

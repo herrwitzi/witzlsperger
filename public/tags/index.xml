@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags - Markus Witzlsperger</title>
+    <link>http://www.witzlsperger.de/tags/</link>
+    <description>Recent content in Tags on Markus Witzlsperger</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Wed, 06 Mar 2019 10:34:32 +0100</lastBuildDate>
+    
+        <atom:link href="http://www.witzlsperger.de/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Css</title>
+      <link>http://www.witzlsperger.de/tags/css/</link>
+      <pubDate>Wed, 06 Mar 2019 10:34:32 +0100</pubDate>
+      
+      <guid>http://www.witzlsperger.de/tags/css/</guid>
+      <description></description>
+    </item><item>
+      <title>Html</title>
+      <link>http://www.witzlsperger.de/tags/html/</link>
+      <pubDate>Wed, 06 Mar 2019 10:34:32 +0100</pubDate>
+      
+      <guid>http://www.witzlsperger.de/tags/html/</guid>
+      <description></description>
+    </item><item>
+      <title>Js</title>
+      <link>http://www.witzlsperger.de/tags/js/</link>
+      <pubDate>Wed, 06 Mar 2019 10:34:32 +0100</pubDate>
+      
+      <guid>http://www.witzlsperger.de/tags/js/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

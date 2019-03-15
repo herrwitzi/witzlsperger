@@ -1,0 +1,33 @@
+title = "skills"
+
+[[skills]]
+subject = "Englisch"
+value = "80"
+
+[[skills]]
+subject = "HTML"
+value = "90"
+
+[[skills]]
+subject = "CSS"
+value = "90"
+
+[[skills]]
+subject = "JavaScript"
+value = "70"
+
+[[skills]]
+subject = "Java"
+value = "70"
+
+[[skills]]
+subject = "inDesign"
+value = "80"
+
+[[skills]]
+subject = "Illsutrator"
+value = "80"
+
+[[skills]]
+subject = "Photoshop"
+value = "60"

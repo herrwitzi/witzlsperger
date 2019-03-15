@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}" dir="ltr">
+  {{ partial "head.html" . }}
+  <body>
+    {{ partial "nav-bar.html" . }}
+    <main>
+      <div style="z-index: 4; position: relative;">
+        <section class="pt-5">
+          <div class="container">
+          <h2 class="text-center py-4">{{ .Title }}</h2>
+          <div class="row">
+            {{ $paginator := .Paginate (where .Pages "Params.displayinlist" "!=" false) -}}
+            {{- range $paginator.Pages -}}
+              {{ .Render "li" }}
+            {{- end }}
+          </div>
+        </div>
+        </section>
+      </div>
+    </main>
+    {{ partial "footer.html" . }}
+    {{ partial "scripts.html" . }}
+  </body>
+</html>
