@@ -3,7 +3,6 @@ languageCode = "de-de"
 title = "Markus Witzlsperger"
 theme = "aether"
 pluralizelisttitles = "false"
-googleAnalytics = "UA-136092283-1"
 sectionPagesMenu = "menu"
 
 [menu]

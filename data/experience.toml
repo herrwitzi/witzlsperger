@@ -1,6 +1,11 @@
 title = "lebenslauf"
 
 [[experience]]
+timerperiod = "März 2019"
+company = "TH Deggendorf"
+description = "Bachelor of Engineering"
+
+[[experience]]
 timeperiod = "Januar 2019 - März 2019"
 company = "sky Deutschland"
 description = "Bachelorand"
@@ -31,7 +36,7 @@ company = "HAW Landshut"
 description = "Informatik (BA)"
 
 [[experience]]
-timeperiod = "2014"
+timeperiod = "Juli 2014"
 company = "FOS Landshut"
 description = "Fachhochschulreife"
 

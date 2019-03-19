@@ -68,7 +68,6 @@ h1, h2, h3, h4, h5, h6 {
 .highlight {
   background-color: #ededed;
   padding: 4px 8px;
-  /*display: inline-block;*/
 }
 
 .form-control {
@@ -285,7 +284,6 @@ section.pink {
 }
 
 #timeline .timeline-item {
-  margin-bottom: 50px;
   position: relative;
   text-align: right;
 }
@@ -484,4 +482,10 @@ section.pink {
 
 .card {
   box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,0.19), 0 0.3rem 0.3rem -0.1rem rgba(0,0,0,0.23)
+}
+
+@media (min-width: 768px) {
+  #timeline .timeline-item {
+    margin-bottom: 50px;
+  }
 }
