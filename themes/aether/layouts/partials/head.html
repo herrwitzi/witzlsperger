@@ -50,9 +50,9 @@
 
   <!-- Including the bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <!--{{ $styles := resources.Get "css/styles.css" | minify}}
-  <link rel="stylesheet" type="text/css" href="{{ $styles.Permalink }}">-->
-  <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/styles.css">
+  {{ $styles := resources.Get "css/styles.css" | minify}}
+  <link rel="stylesheet" type="text/css" href="{{ $styles.Permalink }}">
+  <!--<link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/styles.css">-->
   <!-- Including google fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:800" rel="stylesheet">
   <!-- Font awesome -->
