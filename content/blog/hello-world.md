@@ -1,9 +1,9 @@
 ---
-title: "Hello World"
-date: 2019-03-06T10:34:32+01:00
-description: "Dies ist ein kleines Turtorial für JS und CSS"
+title: "Hello World!"
+date: 2019-03-24T10:34:32+01:00
+description: "Hello World!"
 categories: []
-tags: ["css", "js"]
+tags: ["css", "js", "html"]
 featuredImage: "v1551877107/sample.jpg"
 featuredImageDescription: ""
 dropCap: true
@@ -17,8 +17,17 @@ accountablePerson: "Markus Witzlsperger"
 copyrightHolder: "Markus Witzlsperger"
 ---
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Diese Seite wurde als weitere Arbeitsprobe erstellt.<br>
+Ein besonderer Augenmerk wurde dabei auf die Schlichtheit des Designs und die Performance gelegt. Auch auf die GDPR-Konformität wurde geachtet, so werden IP-Adressen für Analytics nur verschlüsselt übertragen und auch ein Cookie-Banner weißt auf die Verwendung von Cookies hin.
 
-#### Lorem ipsum
+Durch die Verwendung von Hugo kann in sekundenschnelle eine neue Seite hinzugefügt werden, ohne das ein CMS verwendet werden muss.
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+#### Verwendete Technologieen
+
+  * Hugo Static Site Generator
+  * Bootstrap CSS
+  * Cloudinary CDN für Bilder
+  * Google Fonts
+  * Google Analytics
+  * Cookie Consent
+  * Font Awesome für Icons

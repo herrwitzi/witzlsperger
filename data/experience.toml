@@ -1,7 +1,7 @@
 title = "lebenslauf"
 
 [[experience]]
-timerperiod = "März 2019"
+timeperiod = "März 2019"
 company = "TH Deggendorf"
 description = "Bachelor of Engineering"
 

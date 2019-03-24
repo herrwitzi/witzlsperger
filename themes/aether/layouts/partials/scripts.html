@@ -8,9 +8,9 @@
   var cl = cloudinary.Cloudinary.new({cloud_name: "witzlsperger"}); 
   cl.responsive();
 </script>
-{{ $main := resources.Get "js/main.js" | minify}}
-<script src="{{ $main.Permalink }}"></script>
-<!--<script src="{{ .Site.BaseURL }}/js/main.js"></script>-->
+<!--{{ $main := resources.Get "js/main.js" | minify}}
+<script src="{{ $main.Permalink }}"></script>-->
+<script src="{{ .Site.BaseURL }}/js/main.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
 <script>
     window.addEventListener("load",function(){window.cookieconsent.initialise({palette:{popup:{background:"#cadfdf"},button:{background:"#ffffff"}},theme:"classic",position:"bottom-left",content:{message:"Diese Website verwendet Cookies. Wenn du die Website nutzt, stimmst du der Verwendung von Cookies zu.",dismiss:"OK",link:"Erfahre mehr",href:"http://www.witzlsperger.de/datenschutz/"}})});
