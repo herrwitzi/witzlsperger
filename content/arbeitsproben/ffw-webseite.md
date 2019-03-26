@@ -22,6 +22,6 @@ Nachdem die alte Website sowohl technisch nicht mehr aktuell als auch nicht an d
 
 Aufgrund des responsiven Designs lässt sich die Website nun auch ohne große Schwierigkeiten auf Smartphones aller Art bedienen. Aufgrund dessen erhofft sich die FFW das die Website wieder aktiver benutzt wird.
 
-Die Webseite wurde von grund auf neu programmiert, zum Einsatz kammen dabei das CSS Framework Bootstrap.Bei der Umsetzung wurde auf die integration eines CMS verzichtet, da sich die Inhalte nicht so oft ändern.
+Die Webseite wurde von Grund auf neu programmiert, zum Einsatz kamen dabei das CSS Framework Bootstrap. Bei der Umsetzung wurde auf die Integration eines CMS verzichtet, da sich die Inhalte nicht so oft ändern.
 
-<a href="https://www.ffw-unterwattenbach.de">Link zur Seite</a>
+<a href="https://www.ffw-unterwattenbach.de" target="_blank">Link zur Seite</a>

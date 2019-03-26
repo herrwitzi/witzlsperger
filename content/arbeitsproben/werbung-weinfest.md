@@ -18,9 +18,9 @@ copyrightHolder: "Markus Witzlsperger"
 
 Für die KLJB Wattenbach wurde für diverse Medien ein Werbungskonzept für das jährlich stattfindende Weinfest erstellt.
 
-Das Werbekonzept umfasst ein Profilbild für die Facebook-Seite, ein Banner für die Facebook-Veranstalltung, ein Flyer und Plakat und zusätlich ein Werbebanner für eine digitale Anzeige.
+Das Werbekonzept umfasst ein Profilbild für die Facebook-Seite, ein Banner für die Facebook-Veranstaltung, einen Flyer und ein Plakat und zusätzlich ein Werbebanner für eine digitale Anzeige.
 
-Klicken Sie sich durch die Gallerie:
+Klicken Sie sich durch die Galerie:
 
 <div class="row">
 <div class="thumbnail">
